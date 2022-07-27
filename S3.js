@@ -140,7 +140,7 @@ console.log(automovil)
 */
 
 // Spread Operator - Ejemplo 2
-
+/*
 const primeros = [1,2,3]
 const segundos = [4,5,6]
 
@@ -148,3 +148,25 @@ const todos = [...primeros,...segundos]
 
 console.log(todos);
 
+*/
+
+// Spread Operator - Ejemplo 3
+
+const auto = {
+    brand: 'Nissan',
+    model: 'Versa',
+    year: 2020
+}
+
+const concesionaria = {
+    vendedor: 'Jose',
+    oficina: 'Perisur',
+}
+
+const resultado = {
+    ...auto,
+    ...concesionaria,
+    year:2022
+}
+
+console.log(resultado)
