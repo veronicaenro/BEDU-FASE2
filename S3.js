@@ -205,7 +205,7 @@ console.log('Job:', job)
 */
 
 // Destructuring -  Ejemplo 3
-
+/*
 const person = {
     firstName:'John',
     lastName: 'Doe',
@@ -221,6 +221,26 @@ const working = person.job.yearsWorking;
 const {job: {yearsWorking: antiguedad}} = person;
 
 console.log (antiguedad);
+*/
 
+// Destructuring -  Reto 1
+
+const person = {
+    firstName:'John',
+    lastName: 'Doe',
+    links: {
+        web:{
+            blog:'https://johndoe.com'
+        },
+        social:{
+            facebook: 'https://facebook.com/john.doe',
+            instagram: 'https://instagram.com/john.doe'
+        }
+    }
+}
+
+const {links: {social: {facebook: fb, instagram: ig}}} = person;
+
+console.log (fb, ig);
 
 
