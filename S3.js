@@ -28,7 +28,7 @@ console.log('Numbers:', numbers);
 console.log('Doubled:', doubled);
 */
 
-/*------------------------------------ */
+/*------------------------------------ 
 const numbers = [1,3,4,7,2,1,9,0]
 const doubled = []
 
@@ -40,3 +40,16 @@ for (const number of numbers) {
 
 console.log('Numbers:', numbers);
 console.log('Doubled:', doubled);
+*/
+
+// Reto 1 - Calcular promedio
+
+const numbers = [5,3,4,7,2,1,9,7,7];
+let suma = 0;
+
+for (const number of numbers) {
+    suma+=number;
+}
+
+const promedio=suma/(numbers.length);
+console.log('Promedio:', promedio);
