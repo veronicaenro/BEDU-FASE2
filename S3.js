@@ -78,6 +78,7 @@ console.log(john['lastName']);
 
 //Ejemplo convirtiendo un objeto en array
 
+
 const car = {
     brand: 'Nissan',
     model:'Versa',
@@ -86,7 +87,8 @@ const car = {
 
 // Resultado = [['brand,'Nissan'], ['model','Versa'],['year',2020]]
 
-const keys = Object.keys(car); // ['brand','model','year']
+
+const keys = Object.keys(car); // Extrae los nombres de las propiedades en el orden en el que aparecen
 const pairs = [];
 
 for(let i = 0 ; i < keys.length ; i++){
@@ -94,3 +96,16 @@ for(let i = 0 ; i < keys.length ; i++){
 }
 
 console.log(pairs);
+
+
+
+// Reto 2 Convert Array to Object
+
+const auto = {};
+//const auto = new Object;
+
+for (let index = 0; index < pairs.length; index++) {
+    auto [pairs[index][0]] = pairs [index][1]
+}
+
+console.log(auto);
