@@ -173,7 +173,7 @@ console.log(resultado)
 */
 
 // Destructuring - Ejemplo 1 -----------------------
-
+/*
 const colors = ['red','blue','green']
 
 //const Red = colors[0]
@@ -185,3 +185,18 @@ const [Red, Blue, Green] = colors; // <-- se extraen los valores de las posicion
 console.log(Red)
 console.log(Blue)
 console.log(Green)
+*/
+
+// Destructuring -  Ejemplo 2
+
+const person = {
+    firstName:'John',
+    lastName: 'Doe',
+    birthYear: 1990
+}
+
+const{firstName: name,lastName} = person;
+
+
+console.log('Name:', name)
+console.log('Last name:', lastName)
