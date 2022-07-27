@@ -44,12 +44,53 @@ console.log('Doubled:', doubled);
 
 // Reto 1 - Calcular promedio
 
-const numbers = [5,3,4,7,2,1,9,7,7];
-let suma = 0;
+// const numbers = [5,3,4,7,2,1,9,7,7];
+// let suma = 0;
 
-for (const number of numbers) {
-    suma+=number;
+// for (const number of numbers) {
+//     suma+=number;
+// }
+
+// const promedio=suma/(numbers.length);
+// console.log('Promedio:', promedio);
+
+//-------------------------------------------------
+
+// OBJETOS 
+
+/*
+const john={
+    firstName:'John',
+    lastName: 'Doe',
+    birthYear: 1990
 }
 
-const promedio=suma/(numbers.length);
-console.log('Promedio:', promedio);
+console.log(john.firstName);
+console.log(john['lastName']);
+
+john.firstName='Jane';
+john['lastName']='Does';
+
+console.log(john.firstName);
+console.log(john['lastName']);
+
+*/
+
+//Ejemplo convirtiendo un objeto en array
+
+const car = {
+    brand: 'Nissan',
+    model:'Versa',
+    year: 2020
+}
+
+// Resultado = [['brand,'Nissan'], ['model','Versa'],['year',2020]]
+
+const keys = Object.keys(car); // ['brand','model','year']
+const pairs = [];
+
+for(let i = 0 ; i < keys.length ; i++){
+    pairs.push([keys[i], car[keys[i]]])
+}
+
+console.log(pairs);
