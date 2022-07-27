@@ -151,7 +151,7 @@ console.log(todos);
 */
 
 // Spread Operator - Ejemplo 3
-
+/*
 const auto = {
     brand: 'Nissan',
     model: 'Versa',
@@ -170,3 +170,18 @@ const resultado = {
 }
 
 console.log(resultado)
+*/
+
+// Destructuring - Ejemplo 1 -----------------------
+
+const colors = ['red','blue','green']
+
+//const Red = colors[0]
+// const Blue = colors[1]
+// const Green = colors[2]
+
+const [Red, Blue, Green] = colors; // <-- se extraen los valores de las posiciones en el arreglo colors y  al mismo tiempo se les asigna el nombre de la variable
+
+console.log(Red)
+console.log(Blue)
+console.log(Green)
