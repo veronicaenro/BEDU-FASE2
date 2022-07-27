@@ -78,7 +78,7 @@ console.log(john['lastName']);
 
 //Ejemplo convirtiendo un objeto en array
 
-
+/*
 const car = {
     brand: 'Nissan',
     model:'Versa',
@@ -109,3 +109,31 @@ for (let index = 0; index < pairs.length; index++) {
 }
 
 console.log(auto);
+*/
+
+// Ejemplo - Spread Operator -------------------
+
+const colors = ['red','blue','green']
+
+const myColors = [...colors] // <-- Hace una copia del arreglo
+
+colors[0] = 'pink'
+
+console.log('Colors:', colors)
+console.log('My Colors:', myColors)
+
+const auto = {
+    brand: 'Nissan',
+    model: 'Versa',
+    year: 2020
+}
+
+const automovil={...auto}
+
+console.log(auto)
+console.log(automovil)
+
+auto.brand='Ford'
+
+console.log(auto)
+console.log(automovil)
