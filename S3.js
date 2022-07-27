@@ -195,8 +195,9 @@ const person = {
     birthYear: 1990
 }
 
-const{firstName: name,lastName} = person;
-
+//const{firstName: name,lastName} = person;
+const{firstName: name, job = 'Developer'} = person;
 
 console.log('Name:', name)
-console.log('Last name:', lastName)
+//console.log('Last name:', lastName)
+console.log('Job:', job)
