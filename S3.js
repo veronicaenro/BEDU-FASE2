@@ -188,7 +188,7 @@ console.log(Green)
 */
 
 // Destructuring -  Ejemplo 2
-
+/*
 const person = {
     firstName:'John',
     lastName: 'Doe',
@@ -201,3 +201,26 @@ const{firstName: name, job = 'Developer'} = person;
 console.log('Name:', name)
 //console.log('Last name:', lastName)
 console.log('Job:', job)
+
+*/
+
+// Destructuring -  Ejemplo 3
+
+const person = {
+    firstName:'John',
+    lastName: 'Doe',
+    birthYear: 1990,
+    job: {
+        type:'Developer',
+        yearsWorking: 5
+    }
+}
+
+const working = person.job.yearsWorking;
+
+const {job: {yearsWorking: antiguedad}} = person;
+
+console.log (antiguedad);
+
+
+
