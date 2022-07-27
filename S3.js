@@ -112,7 +112,7 @@ console.log(auto);
 */
 
 // Ejemplo - Spread Operator -------------------
-
+/*
 const colors = ['red','blue','green']
 
 const myColors = [...colors] // <-- Hace una copia del arreglo
@@ -137,3 +137,14 @@ auto.brand='Ford'
 
 console.log(auto)
 console.log(automovil)
+*/
+
+// Spread Operator - Ejemplo 2
+
+const primeros = [1,2,3]
+const segundos = [4,5,6]
+
+const todos = [...primeros,...segundos]
+
+console.log(todos);
+
