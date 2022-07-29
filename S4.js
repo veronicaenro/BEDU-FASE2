@@ -87,7 +87,7 @@ logName();
 
 // Arrow Functions - Ejemplo 6
 
-const firstNames = ['John', 'Jane', 'Mark'];
+//const firstNames = ['John', 'Jane', 'Mark'];
 /*
 function getFullNames(names){   // Funcion normal
     const fullNames = [];
@@ -134,6 +134,33 @@ getLargerInt(5,7);
 // Sesion 4 - Reto 3
 
 // funcion que compare los numeros en un array
-
+/*
 const getLargerInt = (numeros) => console.log(`El numero mayor de los ingresados es: ${numeros[0] < numeros[1] ? nummeros[1] : numeros[0]}`);  
 getLargerInt([10,4]);
+*/
+
+// Sesion 4 -  Reto 3 - a
+
+// Encontrar los numeros de Fibonacci
+
+function fibonacci(numero) {
+    if (numero === 0){
+        return 0;
+    }else if (numero === 1){ 
+        return 1;
+    }else{        
+        return fibonacci(numero - 1) + fibonacci(numero - 2);
+    }
+}
+
+const secuenciaFibonacci = (limit) => {
+    if (limit < 1){
+        console.log('Limit debe ser mayor que cero')
+    }
+    for(let i = 0; i<= limit; i++){
+        console.log(fibonacci(i));
+    }
+}
+
+
+secuenciaFibonacci(6);
