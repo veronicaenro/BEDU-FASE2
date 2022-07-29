@@ -44,7 +44,7 @@ power(2, 10);
 */
 
 // Ejemplo 3 - Expresion de una funcion
-
+/*
 const whatDoYouDo = function(job,name){  // No tiene nombre
     switch (job) {
         case 'developer':
@@ -57,3 +57,29 @@ const whatDoYouDo = function(job,name){  // No tiene nombre
 }
 
 console.log(whatDoYouDo('developer','Pepe'));
+*/
+
+// Ejemplo 4 - Expresion de una funcion - Recursividad
+/*
+const factorial = function fac(num){
+    return num < 2 ? 1 : num * fac(num - 1);   // Recursividad - se llama la funcion a si misma
+}
+
+console.log(factorial(5))
+*/
+
+// Ejemplo 5 
+/*
+function logName(){
+    const name = 'John Doe';
+    console.log(name);
+}
+
+logName();
+
+*/
+
+(function(){
+    const name = 'John Doe';
+    console.log(name);
+})()              <--- Expresiones de funciones ejecutadas inmediatamente IESF
