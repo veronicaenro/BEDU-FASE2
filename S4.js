@@ -99,7 +99,7 @@ function getFullNames(names){   // Funcion normal
 */
 
 // Arrow Function
-
+/*
 const getFullNames = (names) => {   // Fat arrow (anonima)
     const fullNames = [];
     for (const name of names){
@@ -112,6 +112,11 @@ const fullNames = getFullNames(firstNames);
 
 console.log(fullNames);
 
+*/
 
+// Ejemplo Arrow functions
+
+const logName = name => console.log(`Hello ${name}`)
+logName('Jose'); 
 
 
