@@ -31,7 +31,7 @@ yearsUntilRetirement(1969, 'Jose');
 */
 
 // Sesion 4 - Reto 1
-
+/*
 function power(base, exponent){
     let result=1;
     for (let iteration = 0; iteration < exponent; iteration++){
@@ -41,3 +41,19 @@ function power(base, exponent){
 }
 
 power(2, 10);
+*/
+
+// Ejemplo 3 - Expresion de una funcion
+
+const whatDoYouDo = function(job,name){  // No tiene nombre
+    switch (job) {
+        case 'developer':
+            return name + ' develops cool apps...'
+        case 'designer':
+            return name + ' designs awesome websites'
+        default:
+            return name + ' does something else'
+    }
+}
+
+console.log(whatDoYouDo('developer','Pepe'));
