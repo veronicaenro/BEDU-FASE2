@@ -115,8 +115,17 @@ console.log(fullNames);
 */
 
 // Ejemplo Arrow functions
-
+/*
 const logName = name => console.log(`Hello ${name}`)
 logName('Jose'); 
+*/
 
+// Sesion 4 - Reto 2
+
+// Dando 2 numeros, regrese el numero mayor
+
+
+const getLargerInt = (num1,num2) => num1 < num2 ? num2 : num1;  
+
+console.log(getLargerInt(5,7));
 
