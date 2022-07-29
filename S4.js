@@ -125,7 +125,15 @@ logName('Jose');
 // Dando 2 numeros, regrese el numero mayor
 
 
-const getLargerInt = (num1,num2) => num1 < num2 ? num2 : num1;  
+//const getLargerInt = (num1,num2) => num1 < num2 ? num2 : num1;  
+/*
+const getLargerInt = (num1,num2) => console.log(`El numero mayor de los ingresados es: ${num1 < num2 ? num2 : num1}`);  
+getLargerInt(5,7);
+*/
 
-console.log(getLargerInt(5,7));
+// Sesion 4 - Reto 3
 
+// funcion que compare los numeros en un array
+
+const getLargerInt = (numeros) => console.log(`El numero mayor de los ingresados es: ${numeros[0] < numeros[1] ? nummeros[1] : numeros[0]}`);  
+getLargerInt([10,4]);
