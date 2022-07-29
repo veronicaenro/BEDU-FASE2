@@ -78,8 +78,40 @@ function logName(){
 logName();
 
 */
-
+/*
 (function(){
     const name = 'John Doe';
     console.log(name);
-})()              <--- Expresiones de funciones ejecutadas inmediatamente IESF
+})()          //    <--- Expresiones de funciones ejecutadas inmediatamente IIFE
+*/
+
+// Arrow Functions - Ejemplo 6
+
+const firstNames = ['John', 'Jane', 'Mark'];
+/*
+function getFullNames(names){   // Funcion normal
+    const fullNames = [];
+    for (const name of names){
+        fullNames.push(`${name} Doe`)
+    }
+    return fullNames;
+}
+*/
+
+// Arrow Function
+
+const getFullNames = (names) => {   // Fat arrow (anonima)
+    const fullNames = [];
+    for (const name of names){
+        fullNames.push(`${name} Doe`)
+    }
+    return fullNames;
+}
+
+const fullNames = getFullNames(firstNames);
+
+console.log(fullNames);
+
+
+
+
