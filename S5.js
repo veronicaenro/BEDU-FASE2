@@ -37,7 +37,7 @@ logThis() //Is this === window? true
 foo.logThis() //Is this === window? false
 
 */
-
+/*
 const john = {
     firstName:'John',
     lastName:'Doe',
@@ -54,9 +54,36 @@ console.log(john)
 john.calculateAge();
 
 console.log(john)
+*/
 
+// Ejemplo de HOISTING
+/*
+console.log(power(4,2))
 
+const power = (base,exponent) => {
+    let resultado = 1;
 
+    //asumiendo que el exponinte es positivo siempre
+    for(let i=0; i<exponent;i++){
+        resultado = resul
+    }
+}
+*/
 
+// Ejemplo de arrow function y THIS
 
+const john = {
+    firstName:'John',
+    lastName:'Doe',
+    birthYear: 1990,
+    calculateAge:() => { // Cuando se usa una arrow function
+        const today = new Date()
+        const year = today.getFullYear()
+        this.age=year-john.birthYear // El this aqui seria el objeto global 'window'
+    }
+} 
+
+john.calculateAge()
+
+console.log(john)
 
