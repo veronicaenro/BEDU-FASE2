@@ -89,7 +89,7 @@ console.log(john)
 */
 
 // Reto 1 
-
+/*
 var singers = [
     { name: 'Steven Tyler', band: 'Aerosmith', born: 1948 },
     { name: 'Karen Carpenter', band: 'The Carpenters', born: 1950 },
@@ -116,4 +116,36 @@ function pluck(list, propertyName) {
   console.log( pluck(singers, 'born') );
   // [1948, 1950, 1967, 1964]
 
+*/
+
+// Reto 2
+
+//Escribir una función que reciba un arreglo de 10 enteros entre 0 - 9, y retorne un string en forma de número telefónico.
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]); // "(123) 456-7890"
+
+function createPhoneNumber(numeros){
+    let tel = ""
+    if (numeros.length<10 || numeros.length>10){
+        console.log ("El numero telefonico debe tener 10 digitos")
+        return
+    }
+
+    if(numeros.length == 10){
+        for (let numero of numeros){
+
+        } 
+    }
+    
+}
+
+
+// Reto 3
+
+// Escribir una función que reciba un arreglo de n cantidad de enteros positivos que pueden no estar ordenados. La función debe retornar un nuevo arreglo con los elementos faltantes del primer arreglo.
+
+findMissingNumbers([2, 1, 9, 5, 7, 3, 10]); // [4, 6, 8]
+
+function findMissingNumbers(numbers){
+    
+}
 
