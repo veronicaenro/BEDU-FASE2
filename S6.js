@@ -89,8 +89,8 @@ const john = new Developer('John','JS',10);
 console.log(john);
 */
 
-// Reto 2 - Herencia
-
+// Reto 2 
+/*
 const Group = function(){
     this.members = [];
 }
@@ -117,3 +117,33 @@ let listaDeElementos = [1,2,3,4,5]
 let group = Group.from(listaDeElementos)
 
 console.log(group);
+*/
+
+// Prototype Chain
+
+// Ejemplo Prototype Chain - Heredar Metodos
+
+const Person = function(name, birthYear,job) {
+    this.name = name;
+    this.birthYear = birthYear;
+    this.job = job;
+}
+
+Person.prototype.calculateAge = function (){
+    const today = new Date();
+    const year = today.getFullYear()
+
+    console.log(year - this.birthYear)
+}
+
+const john = new Person ('John', 1994, 'Developer')
+const jane = new Person ('Jane', 1995, 'Designer')
+const mark = new Person ('Mark', 1974, 'Manager')
+
+john.calculateAge();
+
+console.log(john)
+console.log(jane)
+console.log(mark)
+
+
