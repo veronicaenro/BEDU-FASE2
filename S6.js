@@ -35,8 +35,8 @@ console.log(jane);
 console.log(mark);
 */
 
-// Ejercicio 1
-
+// Reto 1
+/*
 const Vec = function (x,y){
     this.x = x;
     this.y = y;
@@ -63,4 +63,26 @@ console.log(vec1.plus(vec2)); // Vec { x: 3, y: 5 }
 console.log(vec1.minus(vec2)); // Vec { x: -1, y: -1 }
 console.log(vec1.length()); // 2.23606797749979
 
+*/
 
+// HERENCIA
+
+// Ejercicio - Herencia
+
+const Person = function(name, birthYear,job) {
+    this.name = name;
+}
+/*
+const john = new Person('John');
+*/
+const Developer = function(name, skills, yearsOfExperience) {
+    
+    Person.call(this, name) ;  // Herencia de Person
+    
+    this.skills = skills;
+    this.yearsOfExperience = yearsOfExperience;
+}
+
+const john = new Developer('John','JS',10);
+
+console.log(john);
