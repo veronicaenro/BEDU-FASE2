@@ -42,10 +42,12 @@ const Vec = function (x,y){
     this.y = y;
 }
 
+// Suma de dos vectores (x1 + x2, y1 + y2)
 Vec.prototype.plus = function(otroVector) {
 return new Vec(this.x + otroVector.x, this.y + otroVector.y);
 }
 
+// Resta de dos vectores (x1 - x2, y1 - y2)
 Vec.prototype.minus = function(otroVector) {
   return new Vec(this.x - otroVector.x, this.y - otroVector.y);
 }
