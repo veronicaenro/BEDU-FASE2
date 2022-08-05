@@ -68,13 +68,14 @@ console.log(vec1.length()); // 2.23606797749979
 // HERENCIA
 
 // Ejercicio - Herencia
-
+/*
 const Person = function(name, birthYear,job) {
     this.name = name;
 }
 /*
 const john = new Person('John');
 */
+/*
 const Developer = function(name, skills, yearsOfExperience) {
     
     Person.call(this, name) ;  // Herencia de Person
@@ -86,3 +87,33 @@ const Developer = function(name, skills, yearsOfExperience) {
 const john = new Developer('John','JS',10);
 
 console.log(john);
+*/
+
+// Reto 2 - Herencia
+
+const Group = function(){
+    this.members = [];
+}
+
+Group.prototype.has =  function(value){
+    return this.members.includes(value); // "includes" Revisa si un valor esta dentro de un arreglo
+}
+
+Group.prototype.add = function(value) {
+    if (!this.has(value)) {
+        this.members.push(value) // "push" Agrega un valor al arreglo (al final)
+    }   
+}
+
+Group.from = function(array) {  // Metodo estatico - NO necesita la instancia de una clase para definirse (sin prototype)
+    let group = new Group();
+    for (let i = 0; i < array.length; i++) {
+        group.add(array[i])
+    }
+    return group
+}
+    
+let listaDeElementos = [1,2,3,4,5]
+let group = Group.from(listaDeElementos)
+
+console.log(group);
