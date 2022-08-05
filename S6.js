@@ -122,7 +122,7 @@ console.log(group);
 // Prototype Chain
 
 // Ejemplo Prototype Chain - Heredar Metodos
-
+/*
 const Person = function(name, birthYear,job) {
     this.name = name;
     this.birthYear = birthYear;
@@ -145,5 +145,41 @@ john.calculateAge();
 console.log(john)
 console.log(jane)
 console.log(mark)
+*/
+
+// CLASES
+
+// Constructor
+/*
+const Person = function(name, birthYear,job) {
+    this.name = name;
+    this.birthYear = birthYear;
+    this.job = job;
+}
+*/
+
+//Clase
+
+class Person{
+    constructor(name, birthYear,job){ // Constructor
+        this.name = name;
+        this.birthYear = birthYear;
+        this.job = job;
+    }
+    calculateAge(){ // Metodo 
+        const today = new Date();
+        const year = today.getFullYear()
+        console.log(year - this.birthYear)
+    }
+}
+
+//Instancias
+
+const john = new Person ('John', 1994, 'Developer')
+const jane = new Person ('Jane', 1995, 'Designer')
+const mark = new Person ('Mark', 1974, 'Manager')
 
 
+console.log(john)
+console.log(jane)
+console.log(mark)
