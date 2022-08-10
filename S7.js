@@ -147,7 +147,7 @@ console.log(sum);
 */
 
 // Funciones de Alto Order - Ejemplo 2
-
+/*
 const num = 12345;
 /*
 const str = num.toString();
@@ -157,7 +157,7 @@ console.log('string: ',str);
 
 const array = str.split('');
 */
-
+/*
 const array = num.toString().split(''); // Equivalente a lo de arriba
 console.log('array: ',array);
 /*
@@ -165,6 +165,7 @@ const arrayOfNum = array.map(function(num){
     return Number(num);
 })
 */
+/*
 const arrayOfNum = array.map(Number); // Equivalente a lo de arriba
 
 console.log('array of Numbers: ',arrayOfNum);
@@ -188,3 +189,19 @@ function sumDigits(number){
 }
 
 console.log('Suma digitos: ',sumDigits(num));
+*/
+
+// Reto 1 - Crear una función flatten que recibe un arreglo de arreglos y retorna un nuevo arreglo con todos los elementos del arreglo original.
+
+function flatten(arrays) {
+    // return arrays.flat();
+
+    return arrays.reduce(function(arrayFlatten, elem){
+        return arrayFlatten.concat(elem)
+    },[])
+}
+
+const arrays = [[1, 2, 3], [4, 5], [6]];
+const array = flatten(arrays);
+
+console.log(array); // [1, 2, 3, 4, 5, 6]
