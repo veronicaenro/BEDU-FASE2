@@ -71,7 +71,7 @@ console.log('Son los mismos autos? ', car === sameCar)
 
 
 // Funcion Puras
-
+/*
 function add(a,b){
     return a+b;
 }
@@ -83,3 +83,37 @@ function randomNumber(){
 
 console.log(add(2,3));
 console.log(randomNumber());
+*/
+
+// Ejemplo 2
+
+let cart = [
+    {  
+        item: 'Laptop',
+        qty: 1 
+    }
+]
+
+
+function addItemToCart(cart, item, qty){
+   //Funcional
+   /*
+    const newCart = cart.map(function (element){
+        return element;
+    })
+    */
+    //Spread operator
+    const newCart = [...cart]
+    newCart.push({
+        item,
+        qty
+    })
+    return newCart;
+}
+
+cart = addItemToCart(cart, 'Telefono', 2);
+cart = addItemToCart(cart, 'Tablet', 4);
+console.log(cart);
+
+
+
