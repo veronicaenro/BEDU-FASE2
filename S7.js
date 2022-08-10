@@ -174,3 +174,17 @@ const sum = arrayOfNum.reduce(function(acumulador, valorActual){
 }, 0)
 
 console.log('Suma: ',sum);
+
+// Encadenar todos los metos en una sola funcion
+
+function sumDigits(number){
+    return number
+        .toString()
+        .split('')
+        .map(Number)
+        .reduce(function(a,b){
+            return a+b;
+        },0)    
+}
+
+console.log('Suma digitos: ',sumDigits(num));
