@@ -128,7 +128,7 @@ console.log(squareOfFour);
 */
 
 // Funciones de alto orden: map, filter, reduce
-
+/*
 const numbers = [1,2,3,4,5,6,7,8];
 const doubles = numbers.map(function(number){ // Map va por cada uno de los datos 
     return number * 2;
@@ -144,3 +144,33 @@ console.log (numbers);
 console.log (doubles);
 console.log (evenNumbers);
 console.log(sum);
+*/
+
+// Funciones de Alto Order - Ejemplo 2
+
+const num = 12345;
+/*
+const str = num.toString();
+
+console.log('num: ',num);
+console.log('string: ',str);
+
+const array = str.split('');
+*/
+
+const array = num.toString().split(''); // Equivalente a lo de arriba
+console.log('array: ',array);
+/*
+const arrayOfNum = array.map(function(num){
+    return Number(num);
+})
+*/
+const arrayOfNum = array.map(Number); // Equivalente a lo de arriba
+
+console.log('array of Numbers: ',arrayOfNum);
+
+const sum = arrayOfNum.reduce(function(acumulador, valorActual){
+    return acumulador + valorActual;
+}, 0)
+
+console.log('Suma: ',sum);
