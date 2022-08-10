@@ -25,7 +25,7 @@ console.log (doubles);
 */
 
 // Ejemplo 1
-
+/*
 const car = {
     brand: 'Nissan',
     model: 'Sentra',
@@ -50,7 +50,7 @@ function addColor(car){
 */
 
 //Spread Operator
-
+/*
 function addColor(car){
     const newCar ={
         ...car,
@@ -67,4 +67,19 @@ console.log('Despues de ejecutar la funcion: ', car);
 console.log('Despues de ejecutar la funcion: ', sameCar);
 
 console.log('Son los mismos autos? ', car === sameCar)
+*/
 
+
+// Funcion Puras
+
+function add(a,b){
+    return a+b;
+}
+
+// Funcion NO pura
+function randomNumber(){
+    return Math.floor(Math.random() * 10);
+}
+
+console.log(add(2,3));
+console.log(randomNumber());
