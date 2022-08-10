@@ -118,10 +118,29 @@ console.log(cart);
 */
 
 // Funciones de 1ra clase - Expresiones de función
-
+/*
 let square = function (number){
     return number * number;
 }
 
 var squareOfFour = square(4);
 console.log(squareOfFour); 
+*/
+
+// Funciones de alto orden: map, filter, reduce
+
+const numbers = [1,2,3,4,5,6,7,8];
+const doubles = numbers.map(function(number){ // Map va por cada uno de los datos 
+    return number * 2;
+});
+
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+const sum = numbers.reduce(function(acumulador, valorActual){
+    return acumulador + valorActual;
+}, 0)
+
+console.log (numbers);
+console.log (doubles);
+console.log (evenNumbers);
+console.log(sum);
