@@ -86,7 +86,7 @@ console.log(randomNumber());
 */
 
 // Ejemplo 2
-
+/*
 let cart = [
     {  
         item: 'Laptop',
@@ -103,6 +103,7 @@ function addItemToCart(cart, item, qty){
     })
     */
     //Spread operator
+    /*
     const newCart = [...cart]
     newCart.push({
         item,
@@ -114,6 +115,13 @@ function addItemToCart(cart, item, qty){
 cart = addItemToCart(cart, 'Telefono', 2);
 cart = addItemToCart(cart, 'Tablet', 4);
 console.log(cart);
+*/
 
+// Funciones de 1ra clase - Expresiones de función
 
+let square = function (number){
+    return number * number;
+}
 
+var squareOfFour = square(4);
+console.log(squareOfFour); 
