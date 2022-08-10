@@ -193,6 +193,7 @@ console.log('Suma digitos: ',sumDigits(num));
 
 // Reto 1 - Crear una función flatten que recibe un arreglo de arreglos y retorna un nuevo arreglo con todos los elementos del arreglo original.
 
+/*
 function flatten(arrays) {
     // return arrays.flat();
 
@@ -205,3 +206,16 @@ const arrays = [[1, 2, 3], [4, 5], [6]];
 const array = flatten(arrays);
 
 console.log(array); // [1, 2, 3, 4, 5, 6]
+*/
+
+// Reto 2 - Crear una función compact que recibe un arreglo y retorna un nuevo arreglo sin incluir los valores que sean falsy.
+
+function compact(array) {
+    return array.filter(value => !!value);
+}
+  
+  const array = [0, '0', NaN, , null, [], {}, 1, false, 2, '', 3];
+  const compactedArray = compact(array);
+  
+  console.log(compactedArray); // [1, 2, 3]
+  
