@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <blockquote id="'quote">
+    <blockquote id="quote">
         This is a blockquote
     </blockquote>
 
@@ -31,7 +31,13 @@
             return node;
         }
 
-        console.log(createNode('h1', createNode('strong','Hello world3!')))
+        console.log(createNode('h1', createNode('strong','Hello world3!')));
+
+        document.getElementById('quote')
+        .appendChild(
+            createNode('footer', createNode('strong', '- Karl Popper'))
+        )
+
     </script>
 </body>
 </html>
