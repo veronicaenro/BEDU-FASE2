@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Listener</title>
+</head>
+<body>
+    <p>No Handler</p>
+    <button> Click Me</button>
+
+    <p>No handler</p>
+
+    <script>
+        const button = document.querySelector('button')
+        
+        /* Se muestra mensaje cada vez que se haga click en el boton
+        button.addEventListener('click', function(){
+            console.log('Button clicked')
+        })
+        */
+        
+        // Se muestra mensaje al dar click por primera vez solamente
+        function unaVez(){
+            console.log ('Boton click')
+            button.removeEventListener('click', unaVez)
+        }
+
+        button.addEventListener('click', unaVez)
+
+    </script>
+</body>
+</html>
